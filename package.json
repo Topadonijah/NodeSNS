@@ -1,13 +1,13 @@
 {
-  "name": "nodebitd",
+  "name": "nodebird",
   "version": "0.0.1",
-  "description": "익스프레스로 sns만들기기",
+  "description": "익스프레스로 sns만들기",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app"
+    "start": "nodemon app"
   },
-  "author": "jeong",
-  "license": "ISC",
+  "author": "Jeong",
+  "license": "MIT",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.3.1",
