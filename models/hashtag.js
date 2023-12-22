@@ -6,6 +6,7 @@ class Hashtag extends Sequelize.Model {
             title: {
                 type: Sequelize.STRING(15),
                 allowNull: true,
+                unique: true,
             },
         }, {
             sequelize,
@@ -19,7 +20,9 @@ class Hashtag extends Sequelize.Model {
         });
     }
 
-    static associate(db) {}
+    static associate(db) {
+        db.Hashtag.belongsToMany(db.Post, { through: 'PostHashtag'});
+    }
 };
 
 module.exports = Hashtag;
